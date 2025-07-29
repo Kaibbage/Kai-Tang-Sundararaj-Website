@@ -7,7 +7,7 @@
 
 header {
     text-align: center;
-    background-color: rgb(46, 51, 49);
+    background-color: rgba(12, 24, 46, 0.884);
     color: white;
     padding: 2rem 0;
 }
@@ -19,4 +19,28 @@ header {
 .subTitle {
     margin: 0.5rem 0;
     font-size: 1.3rem;
+}
+
+
+nav {
+    display: flex;
+    background-color: #1a2633e3;
+    padding: 1rem 0;
+    justify-content: center;
+    gap: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #3b658bf1;
+    text-decoration: underline;
 }
