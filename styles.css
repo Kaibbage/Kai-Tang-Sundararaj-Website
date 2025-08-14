@@ -59,7 +59,8 @@ a:hover {
     padding: 0 2rem;
 }
 
-#about {
+.section {
+    width: 100%;
     margin: 2rem;
     padding: 2rem 3rem;
     background-color: white;
@@ -91,3 +92,96 @@ h2 {
 p {
     font-size: 1.1rem;
 }
+
+#projects-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    width: 40%;
+    height: 700px;
+    background: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #2b537c;
+    margin-bottom: 0.5rem;
+}
+
+.project-card img {
+    width: 75%;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card p {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.project-card a {
+    margin-top: auto;
+    color: #2c3e50;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.button-group button {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.viewButton {
+    background-color: #2b537c;
+}
+
+.githubButton {
+    background-color: #1d8062;
+}
+
+.youtubeButton {
+    background-color: #5f1a97;
+}
+
+.viewButton:hover {
+    background-color: #4d7497;
+}
+
+.githubButton:hover {
+    background-color: #43ac8c;
+}
+
+.youtubeButton:hover {
+    background-color: #7538a7;
+}
+
+
+
