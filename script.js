@@ -19,6 +19,38 @@ const projects = [
                       Can solve any 9x9 sudoku and generate random sudokus. 
                       Uses backtracking algorithm and websocket to send updates from backend to frontend.`
     },
+    {
+        title: "Substring Typing Game",
+        image: "pics/TypingGame.png",
+        tryLink: "https://typing-substring-match-game.onrender.com",
+        githubLink: "https://github.com/Kaibbage/Typing_Substring_Match_Game",
+        youtubeLink: "https://www.youtube.com/watch?v=yourvideo",
+        description: `Substring Typing Game built with a JavaScript frontend and a Java Spring Boot backend. 
+                      This game challenges users to type a word that contains a certain substring within a time limit. 
+                      3 lives, points for every word gotten.`
+    },
+    {
+        title: "Graph Exploration Visualizer",
+        image: "pics/GraphExplore.png",
+        tryLink: "https://graph-exploration-visualiser.onrender.com/",
+        githubLink: "https://github.com/Kaibbage/Graph-Exploration-Visualiser",
+        youtubeLink: "https://www.youtube.com/watch?v=yourvideo",
+        description: `Graph Exploration Visualizer built with a JavaScript frontend and a Java Spring Boot backend. 
+                      This tool allows users to visualize and compare graph algorithms such as Dijkstra's, Astar, 
+                      DFS, and BFS in real-time. The backend creates artificial delays and uses a websocket to send updates. 
+                      Also capable of generating random mazes.`
+    },
+        {
+        title: "Boggle Solver",
+        image: "pics/BoggleSolver.png",
+        tryLink: "https://boggle-solver-1.onrender.com/",
+        githubLink: "https://github.com/Kaibbage/boggle_solver",
+        youtubeLink: "https://www.youtube.com/watch?v=yourvideo",
+        description: `Boggle Solver built with a JavaScript frontend and a Java Spring Boot backend. 
+                      This tool allows users to input a Boggle board and find all possible words that can be formed on the board with their paths. 
+                      Uses a prefix tree built from the scrabble dictionary and dfs for efficient searching. 
+                      Can also generate random boggle boards.`
+    }
 
 ];
 
