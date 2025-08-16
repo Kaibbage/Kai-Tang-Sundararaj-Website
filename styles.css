@@ -48,7 +48,7 @@ nav a {
     transition: background-color 0.3s;
 }
 
-a:hover {
+nav a:hover {
     background-color: #3b658bf1;
     text-decoration: underline;
 }
@@ -239,4 +239,9 @@ footer {
 
 #contacts a {
     font-size: 1.6rem;
+}
+
+#contacts a:hover {
+    color: #248faa;
+    text-decoration: underline;
 }
