@@ -37,7 +37,7 @@ nav {
     gap: 2.5rem;
 }
 
-a {
+nav a {
     color: white;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
@@ -61,7 +61,7 @@ a:hover {
 
 .section {
     width: 100%;
-    margin: 2rem;
+    margin: 3rem 2rem;
     padding: 2rem 3rem;
     background-color: white;
     border-radius: 30px;
@@ -104,7 +104,7 @@ p {
 .project-card {
     width: 40%;
     height: 700px;
-    background: #f9f9f9;
+    background: #f1f4f5;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     padding: 1rem;
@@ -126,6 +126,7 @@ p {
     height: 65%;
     object-fit: cover;
     border-radius: 10px;
+    animation: pulse 5s infinite;
 }
 
 .project-card p {
@@ -183,5 +184,59 @@ p {
     background-color: #7538a7;
 }
 
+.link-header {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
 
+.link-picture{
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    cursor: pointer;
+    animation: pulse 5s infinite;
+}
 
+.separated-links{
+    display: flex;
+    gap: 15%;
+    align-items: center;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 4px 16px rgba(91, 130, 255, 0.25);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(12, 24, 46, 0.884);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+#contacts p {
+    font-size: 1.6rem;
+}
+
+#contacts a {
+    font-size: 1.6rem;
+}

@@ -6,6 +6,7 @@ function initialize(){
    Feel free to check out some of my projects below, or to connect with me on Linkedin.`;
 
    initializeProjects();
+   initializeLinks();
 }
 
 const projects = [
@@ -114,6 +115,57 @@ function initializeProjects() {
     });
 
 
+}
+
+const links = [
+    {
+        image: "pics/Kai Tang Sundararaj Resume.png",
+        alt: "View My Resume",
+        title: "Click to open my resume as pdf",
+        header: "Resume",
+        url: "pics/Kai Tang Sundararaj Resume.pdf"
+    },
+    {
+        image: "pics/Linkedin.png",
+        alt: "View My LinkedIn",
+        title: "Click to open my LinkedIn profile",
+        header: "LinkedIn",
+        url: "https://www.linkedin.com/in/kai-sundararaj-7b2585298/"
+    },
+    {
+        image: "pics/Github.png",
+        alt: "View My GitHub",
+        title: "Click to open my GitHub profile",
+        header: "GitHub",
+        url: "https://github.com/Kaibbage"
+    }
+];
+
+function initializeLinks(){
+    const linksSection = document.getElementById("links");
+    if (!linksSection) return;
+
+    links.forEach(link => {
+        const linkDiv = document.createElement("div");
+        linkDiv.className = "link-item";
+
+        const smallHeader = document.createElement("h4");
+        smallHeader.textContent = link.header;
+        smallHeader.className = "link-header";
+
+        const img = document.createElement("img");
+        img.src = link.image;
+        img.alt = link.alt;
+        img.title = link.title;
+        img.className = "link-picture";
+        img.onclick = () => {
+            window.open(link.url, "_blank");
+        };
+
+        linkDiv.appendChild(smallHeader);
+        linkDiv.appendChild(img);
+        linksSection.appendChild(linkDiv);
+    });
 }
 
 
