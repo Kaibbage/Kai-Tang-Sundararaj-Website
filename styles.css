@@ -245,3 +245,61 @@ footer {
     color: #248faa;
     text-decoration: underline;
 }
+
+/* Tablets */
+@media (max-width: 900px) {
+    .about-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .section {
+        padding: 1rem 1rem;
+        margin: 2rem 0.5rem;
+    }
+    .project-card {
+        width: 90%;
+        margin-left: 0;
+        height: auto;
+    }
+    .link-picture {
+        max-width: 100%;
+        min-width: 0;
+    }
+    .separated-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.3rem;
+    }
+    .subTitle {
+        font-size: 1rem;
+    }
+    .about-section img {
+        width: 120px;
+        height: 120px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+    .section {
+        padding: 0.5rem 0.2rem;
+        margin: 1rem 0.2rem;
+    }
+    .project-card {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    #contacts p,
+    #contacts a {
+        font-size: 1.1rem;
+    }
+}
