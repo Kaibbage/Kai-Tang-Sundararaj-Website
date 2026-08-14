@@ -1,7 +1,7 @@
 function initialize(){
    const aboutMe = document.getElementById("aboutMe");
-   aboutMe.innerHTML = `Hello! I'm Kai, a 4th year computer science student at Carleton University graduating in May 2026.
-   I am currently finishing a coop as a software engineer at Ericsson, and I am currently looking for new opportunities in software development.
+   aboutMe.innerHTML = `Hello! I'm Kai, a Masters student at the University of Waterloo studying Computer Engineering and graduating in May 2028.
+   I am currently looking for new opportunities in software development.
    In my free time, I enjoy working on personal projects, playing badminton, and reading manga.
    Feel free to check out some of my projects below, or to connect with me on Linkedin.`;
 
