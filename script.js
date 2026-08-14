@@ -95,16 +95,16 @@ function initializeProjects() {
             window.open(proj.githubLink, "_blank");
         };
 
-        const youtubeButton = document.createElement("button");
-        youtubeButton.textContent = "Youtube";
-        youtubeButton.classList.add("youtubeButton");
-        youtubeButton.onclick = () => {
-            window.open(proj.youtubeLink, "_blank");
-        };
+        // const youtubeButton = document.createElement("button");
+        // youtubeButton.textContent = "Youtube";
+        // youtubeButton.classList.add("youtubeButton");
+        // youtubeButton.onclick = () => {
+        //     window.open(proj.youtubeLink, "_blank");
+        // };
 
         buttonGroup.appendChild(tryButton);
         buttonGroup.appendChild(githubButton);
-        buttonGroup.appendChild(youtubeButton);
+        // buttonGroup.appendChild(youtubeButton);
 
         projDiv.appendChild(header);
         projDiv.appendChild(img);
